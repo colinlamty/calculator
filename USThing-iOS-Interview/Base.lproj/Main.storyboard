@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cAo-rV-wgI">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cAo-rV-wgI">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Calculator View Controller-->
         <scene sceneID="Cwm-Fn-kmO">
             <objects>
-                <viewController id="cAo-rV-wgI" sceneMemberID="viewController">
+                <viewController id="cAo-rV-wgI" customClass="CalculatorViewController" customModule="USThing_iOS_Interview" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rQ0-eS-dLF"/>
                         <viewControllerLayoutGuide type="bottom" id="NED-QT-0Mx"/>
@@ -22,89 +19,129 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAE-j8-nO7">
-                                <rect key="frame" x="89" y="519" width="60" height="60"/>
+                                <frame key="frameInset" minX="52" minY="362" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="oneDigit:" destination="cAo-rV-wgI" eventType="touchUpInside" id="yXl-e9-yFL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhd-UU-IIE">
-                                <rect key="frame" x="157" y="519" width="60" height="60"/>
+                                <frame key="frameInset" minX="120" minY="362" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="twoDigit:" destination="cAo-rV-wgI" eventType="touchUpInside" id="8aA-2I-Nop"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jla-Op-WwM">
-                                <rect key="frame" x="225" y="519" width="60" height="60"/>
+                                <frame key="frameInset" minX="188" minY="362" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="threeDigit:" destination="cAo-rV-wgI" eventType="touchUpInside" id="a4J-s1-WOD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xl3-0z-l8g">
-                                <rect key="frame" x="89" y="451" width="60" height="60"/>
+                                <frame key="frameInset" minX="52" minY="294" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="fourDigit:" destination="cAo-rV-wgI" eventType="touchUpInside" id="SrL-yT-0eb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XR4-kt-jHT">
-                                <rect key="frame" x="157" y="451" width="60" height="60"/>
+                                <frame key="frameInset" minX="120" minY="294" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="fiveDigit:" destination="cAo-rV-wgI" eventType="touchUpInside" id="dz5-OX-zda"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWr-7c-pwF">
-                                <rect key="frame" x="225" y="451" width="60" height="60"/>
+                                <frame key="frameInset" minX="188" minY="294" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="6"/>
+                                <connections>
+                                    <action selector="sixDigit:" destination="cAo-rV-wgI" eventType="touchUpInside" id="BzU-kM-ycN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wK-BC-Itm">
-                                <rect key="frame" x="89" y="383" width="60" height="60"/>
+                                <frame key="frameInset" minX="52" minY="226" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="7"/>
+                                <connections>
+                                    <action selector="sevenButton:" destination="cAo-rV-wgI" eventType="touchUpInside" id="RDj-2i-n9h"/>
+                                    <action selector="sevenDigit:" destination="cAo-rV-wgI" eventType="touchUpInside" id="a8j-pa-l5W"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqv-1C-9F5">
-                                <rect key="frame" x="157" y="383" width="60" height="60"/>
+                                <frame key="frameInset" minX="120" minY="226" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="8"/>
+                                <connections>
+                                    <action selector="eightDigit:" destination="cAo-rV-wgI" eventType="touchUpInside" id="3Sh-r3-DeW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6A-0i-U2w">
-                                <rect key="frame" x="225" y="383" width="60" height="60"/>
+                                <frame key="frameInset" minX="188" minY="226" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="9"/>
+                                <connections>
+                                    <action selector="nineDigit:" destination="cAo-rV-wgI" eventType="touchUpInside" id="oJs-Hr-3mD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh9-1S-Z3b">
-                                <rect key="frame" x="157" y="587" width="60" height="60"/>
+                                <frame key="frameInset" minX="52" minY="430" width="196" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="zeroDigit:" destination="cAo-rV-wgI" eventType="touchUpInside" id="Fhz-FA-c4y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybr-9H-uYA">
-                                <rect key="frame" x="299" y="519" width="60" height="60"/>
+                                <frame key="frameInset" minX="262" minY="226" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="plusButton:" destination="cAo-rV-wgI" eventType="touchUpInside" id="WlV-ri-zmx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yon-fH-CLK">
-                                <rect key="frame" x="299" y="587" width="60" height="60"/>
+                                <frame key="frameInset" minX="262" minY="362" width="60" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="="/>
+                                <connections>
+                                    <action selector="equalButton:" destination="cAo-rV-wgI" eventType="touchUpInside" id="pqu-ZW-QWc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4G-1O-jEp">
-                                <rect key="frame" x="89" y="334" width="196" height="41"/>
+                                <frame key="frameInset" minX="52" minY="177" width="270" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx7-LM-h6e">
-                                <rect key="frame" x="299" y="315" width="60" height="60"/>
+                                <frame key="frameInset" minX="262" minY="294" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="AC"/>
+                                <connections>
+                                    <action selector="acButton:" destination="cAo-rV-wgI" eventType="touchUpInside" id="LgQ-Ld-oiw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -112,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSK-Jr-o7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1420" y="70"/>
+            <point key="canvasLocation" x="1420" y="69.715142428785612"/>
         </scene>
     </scenes>
 </document>

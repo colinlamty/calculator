@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B71B0671FA0AF91003BD828 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71B0661FA0AF91003BD828 /* CalculatorViewController.swift */; };
 		B610A2431E1BF21B00ECE2A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610A2421E1BF21B00ECE2A8 /* AppDelegate.swift */; };
 		B610A2481E1BF21B00ECE2A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B610A2461E1BF21B00ECE2A8 /* Main.storyboard */; };
 		B610A24A1E1BF21B00ECE2A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B610A2491E1BF21B00ECE2A8 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B71B0661FA0AF91003BD828 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		B610A23F1E1BF21B00ECE2A8 /* USThing-iOS-Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "USThing-iOS-Interview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B610A2421E1BF21B00ECE2A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B610A2471E1BF21B00ECE2A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				B610A2421E1BF21B00ECE2A8 /* AppDelegate.swift */,
 				B610A2461E1BF21B00ECE2A8 /* Main.storyboard */,
+				3B71B0661FA0AF91003BD828 /* CalculatorViewController.swift */,
 				B610A2491E1BF21B00ECE2A8 /* Assets.xcassets */,
 				B610A24B1E1BF21B00ECE2A8 /* LaunchScreen.storyboard */,
 				B610A24E1E1BF21B00ECE2A8 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B71B0671FA0AF91003BD828 /* CalculatorViewController.swift in Sources */,
 				B610A2431E1BF21B00ECE2A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
